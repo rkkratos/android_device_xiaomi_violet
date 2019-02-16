@@ -264,6 +264,11 @@ PRODUCT_PACKAGES += \
     VioletSystemUI \
     VioletTelephony \
     VioletWifi
+    
+PRODUCT_PACKAGES += \
+    VioletAperture \
+    VioletLineageDialer \
+    VioletLineageSDK    
 
 # Partitions
 PRODUCT_PACKAGES += \
