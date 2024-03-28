@@ -8,6 +8,7 @@ soong_namespace {
         "bootable/deprecated-ota",
         "hardware/google/interfaces",
         "hardware/google/pixel"
+        "hardware/xiaomi",
     ],
 }
 
