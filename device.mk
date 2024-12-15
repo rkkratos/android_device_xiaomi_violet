@@ -390,6 +390,10 @@ PRODUCT_PACKAGES += \
     logcat.rc
 
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
