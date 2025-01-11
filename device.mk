@@ -168,7 +168,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     gralloc.qcom \
     hwcomposer.qcom \
-    libdisplayconfig \
     libtinyxml \
     libvulkan \
     vendor.qti.hardware.display.allocator-service \
