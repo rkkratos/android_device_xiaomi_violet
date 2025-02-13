@@ -9,14 +9,13 @@
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common EvolutionX stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Extra Stuffs
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_MINI_GAPPS := true
 TARGET_ENABLE_BLUR := false
 
 # MiuiCamera
