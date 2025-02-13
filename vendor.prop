@@ -180,7 +180,6 @@ ro.hardware.keystore_desede=true
 
 # Media
 audio.offload.video=true
-debug.stagefright.c2inputsurface=-1
 vendor.media.target.version=2
 
 # Netmgr
