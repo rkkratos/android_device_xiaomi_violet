@@ -10,7 +10,7 @@ soong_namespace {
         "hardware/xiaomi",
         "hardware/google/pixel",
         "vendor/qcom/opensource/commonsys/display",
-        "vendor/qcom/opensource/commonsys-intf/display"
+        "vendor/qcom/opensource/commonsys-intf/display",
     ],
 }
 
