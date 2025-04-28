@@ -196,15 +196,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
-PRODUCT_PACKAGES += \
-    libstagefright_softomx.vendor
-
-# OMX
-PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service \
-    libstagefright_omx.vendor \
-    libavservices_minijail \
-    libavservices_minijail.vendor
+$(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,true)
 
 # Dolby
 PRODUCT_COPY_FILES += \
