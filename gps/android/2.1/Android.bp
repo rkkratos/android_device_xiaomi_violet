@@ -50,6 +50,8 @@ cc_library_shared {
         "android.hardware.health@2.1",
         "android.hardware.power@1.2",
         "libbase",
+        "libbinder_ndk",
+        "android.hardware.health-V1-ndk",
     ] + [
         "libloc_core",
         "libgps.utils",
