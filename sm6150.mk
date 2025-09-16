@@ -257,11 +257,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_ENFORCE_RRO_TARGETS += *
+PRODUCT_PACKAGES += \
+    VioletCarrierConfig \
+    VioletFrameworks \
+    VioletSettings \
+    VioletSystemUI \
+    VioletTelephony \
+    VioletWifi
 
 # Partitions
 PRODUCT_PACKAGES += \
@@ -287,10 +289,6 @@ PRODUCT_COPY_FILES += \
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor # Needed by CNE app
-
-# RIL
-PRODUCT_PACKAGES += \
-    CarrierConfigOverlay
 
 # Recovery
 PRODUCT_PACKAGES += \
@@ -396,12 +394,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     ipacm \
     IPACM_cfg.xml \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
-
-PRODUCT_PACKAGES += \
-    VioletWifiOverlay
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
