@@ -5,6 +5,8 @@ cc_library_shared {
     name: "libgnss",
     vendor: true,
 
+
+
     shared_libs: [
         "libutils",
         "libcutils",
