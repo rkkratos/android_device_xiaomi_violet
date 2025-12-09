@@ -457,4 +457,7 @@
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M -80,0 L -80,80 L 80,80 L 80,0 Z</string>
 
+    <!-- Whether WM DisplayContent supports high performance transitions
+         (lower-end devices may want to disable) -->
+    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
 </resources>
