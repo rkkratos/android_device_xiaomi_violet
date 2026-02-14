@@ -46,7 +46,7 @@ lib_fixups: lib_fixups_user_type = {
 
 
 blob_fixups: blob_fixups_user_type = {
-        system_ext/lib64/libwfdnative.so': blob_fixup()
+        'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
     (   'vendor/lib64/hw/camera.qcom.so',
         'vendor/lib64/libvidhance.so',): blob_fixup()
