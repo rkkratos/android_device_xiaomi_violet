@@ -13,16 +13,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/sm6150.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common halcyon stuff.
+$(call inherit-product, vendor/halcyon/config/common.mk)
 
-# EvolutionX Config
-EVO_BUILD_TYPE := Unofficial
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_MINI_GAPPS := true
+# Extra Spice
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+HALCYON_BUILD_TYPE := Beta
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_violet
+PRODUCT_NAME := halcyon_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
